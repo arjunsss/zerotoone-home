@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zero to One Labs</title>
-<meta name="description" content="A media company for people at commit zero: career switchers, big-tech lifers, and side-project founders chasing product-market fit. We build dumb stuff with AI until it's not dumb anymore.">
+<title>Zero to One</title>
+<meta name="description" content="Zero to One is a community for people turning ideas into products, products into startups, and early traction into something bigger.">
 <link rel="icon" href="assets/zerotoone-logo.png" type="image/png">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,28 +12,49 @@
 
 <header class="top">
   <div class="top-inner">
-    <a class="logo" href="index.html#top"><img src="assets/zerotoone-logo.png" alt="Zero to One Labs"></a>
-    <nav class="links">
+    <a class="logo" href="index.html#top"><img src="assets/zerotoone-logo.png" alt="Zero to One"></a>
+    <nav class="links" aria-label="Main navigation">
       <a href="#who">Who It's For</a>
-      <a href="#ship">What We Ship</a>
-      <a href="projects.html">Projects</a>
-      <a href="#hosts">Hosts</a>
-      <a href="#watch">Where to Watch</a>
-      <a href="#talk">Talk to us</a>
+      <a href="#help">How We Help</a>
+      <a href="#content">Content</a>
+      <a class="nav-cta" href="#talk">Talk to Us</a>
     </nav>
   </div>
 </header>
 
 <div id="top"></div>
-<div class="wrap hero">
-  <span class="prompt mono">arjun@zero-to-one-labs:~$ git init<span class="cursor"></span></span>
-  <h1>We build dumb stuff with AI until it's <em>not</em> dumb anymore.</h1>
-  <p class="sub">Zero to One Labs is a media company for people staring at commit zero: parents plotting a way into tech, big-tech lifers plotting a way out, and side-project founders trying to find product-market fit before their savings run out. We haven't figured it out either. We're just filming it.</p>
-  <div class="cta-row">
-    <a class="btn primary" href="#ship">Watch us build (badly)</a>
-    <a class="btn ghost" href="projects.html">See projects</a>
+<div class="wrap hero featured-hero">
+  <div class="hero-copy">
+    <span class="prompt mono">arjun@zero-to-one:~$ ./start<span class="cursor"></span></span>
+    <h1>Everyone starts at zero.</h1>
+    <p class="sub">A community for people turning ideas into products, products into startups, and early traction into something bigger.</p>
+    <p class="hero-tags mono">Introductions &middot; GTM &middot; Events &middot; Founder Support &middot; Content</p>
+    <div class="cta-row">
+      <a class="btn primary" href="https://luma.com/4zhpgint" target="_blank" rel="noopener">Attend our Next Event</a>
+      <a class="btn ghost" href="#talk">Talk to Us</a>
+    </div>
+    <p class="hero-meta mono">building &middot; connecting &middot; experimenting &middot; trajectory: hopeful</p>
   </div>
-  <p class="hero-meta mono">0 subscribers &middot; 1 pilot episode &middot; trajectory: hopeful</p>
+
+  <aside class="event-card reveal" aria-labelledby="next-event-title">
+    <div class="event-card-top">
+      <span class="kicker mono">next event</span>
+      <span class="event-date mono">Aug 28</span>
+    </div>
+    <h2 id="next-event-title">Eastside Startup Walk &amp; Talk</h2>
+    <p>Founders, investors, and startup people getting fresh air instead of pretending name tags are fine.</p>
+    <dl class="event-details">
+      <div>
+        <dt>When</dt>
+        <dd>Fri, Aug 28, 2026 &middot; 2:30-3:30 PM</dd>
+      </div>
+      <div>
+        <dt>Where</dt>
+        <dd>Bellevue Downtown Park</dd>
+      </div>
+    </dl>
+    <a class="btn primary event-button" href="https://luma.com/4zhpgint" target="_blank" rel="noopener">Register on Luma</a>
+  </aside>
 </div>
 
 <main class="log">
@@ -42,154 +63,115 @@
   <section class="entry reveal" id="who">
     <div class="marker"><span class="dot"></span><span class="tag mono">v0.2</span></div>
     <div class="content">
-      <span class="eyebrow mono">who this is for</span>
-      <h2>Everyone starts at commit zero.</h2>
-      <p class="lede">Three kinds of people show up to zero-to-one labs. If you see yourself below, you're exactly who we're making this for.</p>
-      <div class="grid cols-3">
+      <span class="eyebrow mono">who it's for</span>
+      <h2>Different stages. Same zero-to-one problem.</h2>
+      <div class="grid cols-4 compact-grid">
         <div class="card story">
-          <span class="kicker mono">role: career-switcher</span>
-          <p class="story-text">As a stay-at-home parent who's never shipped a line of code, I want a way into tech that doesn't start with a $40k bootcamp, so I can prove to myself &mdash; and the group chat &mdash; that it's not too late.</p>
+          <span class="kicker mono">exploring</span>
+          <h3>I want to build something.</h3>
+          <p>For people exploring tech, entrepreneurship, or their first project.</p>
         </div>
         <div class="card story">
-          <span class="kicker mono">role: big-tech-lifer</span>
-          <p class="story-text">As a senior engineer with great equity and a slowly dimming soul, I want to see what leaving actually looks like, so I can decide if the standup that could've been an email is really worth staying for.</p>
+          <span class="kicker mono">making-the-leap</span>
+          <h3>Could I actually do this on my own?</h3>
+          <p>For professionals considering leaving established careers to build something.</p>
         </div>
         <div class="card story">
-          <span class="kicker mono">role: side-project-founder</span>
-          <p class="story-text">As someone with a side project, twelve users, and a spreadsheet named "MAYBE THIS IS SOMETHING," I want to know how anyone actually reaches product-market fit, so I can stop refreshing analytics every four minutes.</p>
+          <span class="kicker mono">early-founder</span>
+          <h3>I built something. Now I need customers.</h3>
+          <p>For side projects and early startups working toward product-market fit.</p>
+        </div>
+        <div class="card story">
+          <span class="kicker mono">gaining-traction</span>
+          <h3>People are using it. Now what?</h3>
+          <p>For founders with early traction working on positioning, GTM, and preparing for conversations with angel investors or institutional VCs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="entry reveal" id="ship">
+  <section class="entry reveal" id="help">
     <div class="marker"><span class="dot"></span><span class="tag mono">v0.3</span></div>
     <div class="content">
-      <span class="eyebrow mono">what we ship</span>
-      <h2>Mostly short videos. Occasionally a receipts folder.</h2>
-      <p class="lede">Six kinds of content, tagged the way we'd tag the commits, if any of this were a commit.</p>
-      <div class="grid cols-2">
+      <span class="eyebrow mono">how we help</span>
+      <h2>Startups are easier with the right people around you.</h2>
+      <div class="grid cols-3 compact-grid">
         <div class="card">
-          <span class="kicker mono">feat:</span>
-          <h3>Build First, Think Later</h3>
-          <p>Arjun and Anennya &mdash; two people with full-time tech jobs and zero home-improvement licenses &mdash; use AI to build real household projects. Physics gets involved. Return policies get tested. Nobody thinks first.</p>
+          <span class="kicker mono">community:</span>
+          <h3>Community &amp; Events</h3>
+          <p>Introductions, workshops, networking events, GTM help, and rooms designed for useful founder conversations.</p>
         </div>
         <div class="card">
-          <span class="kicker mono">fix:</span>
-          <h3>Teardowns</h3>
-          <p>We open up real products &mdash; apps, gadgets, landing pages, pitch decks &mdash; and walk through what works, what doesn't, and what someone clearly shipped on a Friday at 6pm.</p>
+          <span class="kicker mono">content:</span>
+          <h3>Content &amp; Founder Spotlight</h3>
+          <p>Videos, how-to guides, interviews, and founder spotlights that increase your visibility while sharing what you are building.</p>
         </div>
         <div class="card">
-          <span class="kicker mono">docs:</span>
-          <h3>Founder Interviews</h3>
-          <p>Conversations with people who actually made the jump to their own thing &mdash; why they started, what nearly made them quit, and the parts that never make it into the pitch deck.</p>
+          <span class="kicker mono">unblock:</span>
+          <h3>Startup Jam Sessions</h3>
+          <p>1:1 sessions with experts to unblock you on the roadblocks slowing down your next step.</p>
         </div>
-        <div class="card">
-          <span class="kicker mono">chore:</span>
-          <h3>Solo Explainers</h3>
-          <p>Short, unglamorous videos where one of us explains a piece of the zero-to-one journey &mdash; badly at first, then slightly less badly.</p>
-        </div>
-        <div class="card">
-          <span class="kicker mono">README.md</span>
-          <h3>Build Write-Ups</h3>
-          <p>Longer breakdowns of what we've built, repo linked, so you can steal the homework and run your own version at home.</p>
-        </div>
-        <div class="card">
-          <span class="kicker mono">test:</span>
-          <h3>Live Workshops</h3>
-          <p>Livestreamed build sessions with real-time questions. No safety net, no dress rehearsal, frequent regrets.</p>
-        </div>
+      </div>
+      <div class="cta-row section-actions">
+        <a class="btn primary" href="https://cal.com/zeroto1" target="_blank" rel="noopener">Book a Jam Session</a>
       </div>
     </div>
   </section>
-
-  <section class="entry reveal" id="hosts">
-    <div class="marker"><span class="dot"></span><span class="tag mono">v0.4</span></div>
-    <div class="content">
-      <span class="eyebrow mono">who's committing to main</span>
-      <h2>Two engineers, one shared delusion.</h2>
-      <div class="grid cols-2">
-        <div class="card host">
-          <div class="avatar mono">A</div>
-          <div>
-            <h3>Arjun</h3>
-            <p>Writes production code for a living, writes grout-sealant reviews for fun. Firmly believes every home project is "basically just an API call." Has been proven wrong on camera, repeatedly.</p>
-          </div>
-        </div>
-        <div class="card host">
-          <div class="avatar mono">A</div>
-          <div>
-            <h3>Anennya</h3>
-            <p>Also a working engineer. The one who reads the instructions before anything gets plugged in. Has never once said "how hard can it be" and been right about it.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="entry reveal" id="watch">
+  <section class="entry reveal" id="content">
     <div class="marker"><span class="dot"></span><span class="tag mono">v0.5</span></div>
     <div class="content">
-      <span class="eyebrow mono">where we deploy</span>
-      <h2>One build, several targets &mdash; none optimized for any of them.</h2>
-      <p class="lede">The long-form stuff lives on YouTube. Everywhere else gets the clips.</p>
-      <div class="pill-row">
-        <a class="pill" href="projects.html"><span class="branch mono">branch: main</span><strong>YouTube</strong> &mdash; long-form, teardowns, interviews</a>
-        <span class="pill"><span class="branch mono">mirror</span><strong>Instagram</strong> &mdash; clips &amp; reels</span>
-        <span class="pill"><span class="branch mono">mirror</span><strong>TikTok</strong> &mdash; clips &amp; reels</span>
-        <span class="pill"><span class="branch mono">mirror</span><strong>Facebook</strong> &mdash; for the family group chat</span>
+      <span class="eyebrow mono">content</span>
+      <h2>We also make stuff.</h2>
+      <div class="grid cols-4 compact-grid">
+        <div class="card content-card">
+          <h3>Founder Stories</h3>
+          <p>Conversations about the real zero-to-one journey.</p>
+        </div>
+        <div class="card content-card">
+          <h3>Teardowns</h3>
+          <p>Products, positioning, landing pages, and GTM.</p>
+        </div>
+        <div class="card content-card">
+          <h3>Zero-to-One Lessons</h3>
+          <p>Short practical videos about building startups.</p>
+        </div>
+        <div class="card content-card">
+          <h3>Build First, Think Later</h3>
+          <p>Arjun and Anennya build unnecessarily ambitious things with AI.</p>
+        </div>
       </div>
-      <p class="hero-meta mono" style="margin-top:18px;">status: pre-launch &mdash; links go live at v1.0</p>
+      <p class="text-link-row"><a href="projects.html">See all content &rarr;</a></p>
     </div>
   </section>
 </main>
 
-<section class="contact-section reveal" id="talk">
-  <div class="wrap contact-wrap">
-    <div class="contact-copy">
-      <span class="eyebrow mono">talk to us</span>
-      <h2>Talk to us</h2>
-      <p class="lede">We usually reply within 24 hours. Unless production is on fire, bedtime has become a hostage negotiation, or one of our kids needs emergency support on a LEGO build that is apparently load-bearing.</p>
-      <p class="fine-print mono">Spam us and we&rsquo;ll be forced to build an unnecessarily intense tool to figure out who you are. Please don&rsquo;t make this our next project.</p>
+<section class="contact-section final-cta reveal" id="talk">
+  <div class="wrap">
+    <span class="eyebrow mono">zero-to-one @ main</span>
+    <h2>What are you building?</h2>
+    <div class="question-stack">
+      <p>Have an idea?</p>
+      <p>Trying to find customers?</p>
+      <p>Thinking about fundraising?</p>
+      <p>Looking for the right person?</p>
+      <p>Let's talk.</p>
     </div>
-
-    <form class="contact-form" data-contact-form data-form-endpoint="https://formsubmit.co/ajax/sarjun@gmail.com">
-      <label>
-        <span>Name</span>
-        <input type="text" name="name" autocomplete="name" required>
-      </label>
-      <label>
-        <span>Email</span>
-        <input type="email" name="email" autocomplete="email" required>
-      </label>
-      <label>
-        <span>Message</span>
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-      <label class="bot-field" aria-hidden="true">
-        <span>Website</span>
-        <input type="text" name="_honey" tabindex="-1" autocomplete="off">
-      </label>
-      <button class="btn primary" type="submit">Send message</button>
-      <p class="form-status mono" data-form-status aria-live="polite"></p>
-    </form>
+    <div class="cta-row">
+      <a class="btn primary" href="https://cal.com/zeroto1" target="_blank" rel="noopener">Book an Intro</a>
+      <a class="btn ghost" href="https://cal.com/zeroto1" target="_blank" rel="noopener">Book a Startup Jam Session</a>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>
-      <span class="eyebrow mono">v1.0 &mdash; you are here</span>
-      <h2>Follow the build in real time.</h2>
-      <p class="lede">No polished company blog, no ten-year roadmap &mdash; just the log, updated as we go. Watch the first videos land, laugh at the wiring mistakes, and see what commit zero actually looks like.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="projects.html">Watch on YouTube</a>
-        <a class="btn ghost" href="#watch">Follow on Instagram / TikTok</a>
-      </div>
+    <div class="footer-links">
+      <a href="projects.html">Content</a>
+      <a href="https://www.youtube.com/@ZerotoOneLabs" target="_blank" rel="noopener">YouTube</a>
+      <a href="#talk">Talk to Us</a>
     </div>
     <div class="foot-meta mono">
-      <span>zero-to-one-labs @ v0.1.0</span>
-      <span>built with equal parts caffeine and audacity</span>
+      <span>zero-to-one &middot; permanently in beta</span>
     </div>
   </div>
 </footer>

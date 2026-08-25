@@ -48,7 +48,7 @@
           email: email,
           _replyto: email,
           message: message,
-          _subject: 'Zero to One Labs message from ' + name,
+          _subject: 'Zero to One message from ' + name,
           _template: 'table',
           _captcha: 'false'
         })

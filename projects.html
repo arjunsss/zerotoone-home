@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Zero to One Labs</title>
-<meta name="description" content="Zero to One Labs projects, builds, and experiments.">
+<title>Content | Zero to One</title>
+<meta name="description" content="Zero to One content, build logs, experiments, and startup lessons.">
 <link rel="icon" href="assets/zerotoone-logo.png" type="image/png">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,34 +12,32 @@
 
 <header class="top">
   <div class="top-inner">
-    <a class="logo" href="index.html#top"><img src="assets/zerotoone-logo.png" alt="Zero to One Labs"></a>
-    <nav class="links">
+    <a class="logo" href="index.html#top"><img src="assets/zerotoone-logo.png" alt="Zero to One"></a>
+    <nav class="links" aria-label="Main navigation">
       <a href="index.html#who">Who It's For</a>
-      <a href="index.html#ship">What We Ship</a>
-      <a class="active" href="projects.html">Projects</a>
-      <a href="index.html#hosts">Hosts</a>
-      <a href="index.html#watch">Where to Watch</a>
-      <a href="#talk">Talk to us</a>
+      <a href="index.html#help">How We Help</a>
+      <a class="active" href="index.html#content">Content</a>
+      <a class="nav-cta" href="index.html#talk">Talk to Us</a>
     </nav>
   </div>
 </header>
 
 <div id="top"></div>
 <div class="wrap hero projects-hero">
-  <span class="prompt mono">arjun@zero-to-one-labs:~/projects$ ls<span class="cursor"></span></span>
-  <h1>Projects</h1>
-  <p class="sub">Build logs, experiments, and half-sensible ideas from the Zero to One bench.</p>
+  <span class="prompt mono">arjun@zero-to-one:~/content$ ls<span class="cursor"></span></span>
+  <h1>Content</h1>
+  <p class="sub">Founder stories, teardown clips, startup lessons, and build experiments from the Zero to One bench.</p>
 </div>
 
 <main class="log projects-log">
   <div class="spine" aria-hidden="true"></div>
 
   <section class="entry reveal project-entry" id="toy-inventory">
-    <div class="marker"><span class="dot"></span><span class="tag mono">projects</span></div>
+    <div class="marker"><span class="dot"></span><span class="tag mono">content</span></div>
     <div class="content">
-      <span class="eyebrow mono">project list</span>
-      <h2>Current projects</h2>
-      <p class="lede">Small builds we are testing in the real world, one video at a time.</p>
+      <span class="eyebrow mono">content list</span>
+      <h2>Current content</h2>
+      <p class="lede">Videos and experiments we have published so far.</p>
 
       <div class="projects-list">
         <article class="project-card" id="toy-inventory-project">
@@ -54,7 +52,7 @@
           </div>
 
           <div class="project-copy">
-            <span class="kicker mono">project 001</span>
+            <span class="kicker mono">content 001</span>
             <h3>Toy Inventory</h3>
             <p>Our kids have so many toys and games that even we don&rsquo;t remember what we own anymore.</p>
             <p>So Anennya and Arjun decided to build a simple inventory system inside ChatGPT because.... why not ??</p>
@@ -68,52 +66,32 @@
   </section>
 </main>
 
-<section class="contact-section reveal" id="talk">
-  <div class="wrap contact-wrap">
-    <div class="contact-copy">
-      <span class="eyebrow mono">talk to us</span>
-      <h2>Talk to us</h2>
-      <p class="lede">We usually reply within 24 hours. Unless production is on fire, bedtime has become a hostage negotiation, or one of our kids needs emergency support on a LEGO build that is apparently load-bearing.</p>
-      <p class="fine-print mono">Spam us and we&rsquo;ll be forced to build an unnecessarily intense tool to figure out who you are. Please don&rsquo;t make this our next project.</p>
+<section class="contact-section final-cta reveal" id="talk">
+  <div class="wrap">
+    <span class="eyebrow mono">zero-to-one @ content</span>
+    <h2>What are you building?</h2>
+    <div class="question-stack">
+      <p>Have an idea?</p>
+      <p>Trying to find customers?</p>
+      <p>Looking for the right person?</p>
+      <p>Let's talk.</p>
     </div>
-
-    <form class="contact-form" data-contact-form data-form-endpoint="https://formsubmit.co/ajax/sarjun@gmail.com">
-      <label>
-        <span>Name</span>
-        <input type="text" name="name" autocomplete="name" required>
-      </label>
-      <label>
-        <span>Email</span>
-        <input type="email" name="email" autocomplete="email" required>
-      </label>
-      <label>
-        <span>Message</span>
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-      <label class="bot-field" aria-hidden="true">
-        <span>Website</span>
-        <input type="text" name="_honey" tabindex="-1" autocomplete="off">
-      </label>
-      <button class="btn primary" type="submit">Send message</button>
-      <p class="form-status mono" data-form-status aria-live="polite"></p>
-    </form>
+    <div class="cta-row">
+      <a class="btn primary" href="https://cal.com/zeroto1" target="_blank" rel="noopener">Book an Intro</a>
+      <a class="btn ghost" href="https://cal.com/zeroto1" target="_blank" rel="noopener">Book a Startup Jam Session</a>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>
-      <span class="eyebrow mono">projects @ v0.1.0</span>
-      <h2>Follow the build in real time.</h2>
-      <p class="lede">New projects land here as we publish the videos.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="https://www.youtube.com/@ZerotoOneLabs" target="_blank" rel="noopener">Zero to One on YouTube</a>
-        <a class="btn ghost" href="index.html#top">Back home</a>
-      </div>
+    <div class="footer-links">
+      <a href="index.html#top">Home</a>
+      <a href="https://www.youtube.com/@ZerotoOneLabs" target="_blank" rel="noopener">YouTube</a>
+      <a href="index.html#talk">Talk to Us</a>
     </div>
     <div class="foot-meta mono">
-      <span>zero-to-one-labs @ projects</span>
-      <span>video-backed project list</span>
+      <span>zero-to-one &middot; permanently in beta</span>
     </div>
   </div>
 </footer>
