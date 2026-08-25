@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hot Potato Timer</title>
+<meta name="description" content="A fast phone-pass networking timer for quick introductions.">
+<meta name="theme-color" content="#173824" id="theme-color">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hot Potato">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="hotpotato.css">
+</head>
+<body>
+<div class="hotpotato-app" data-app data-mode="ready">
+  <button class="settings-button" type="button" aria-label="Open settings" data-settings-open>
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"></path>
+      <path d="M19.4 15a1.8 1.8 0 0 0 .36 1.98l.06.06a2.1 2.1 0 1 1-2.97 2.97l-.06-.06a1.8 1.8 0 0 0-1.98-.36 1.8 1.8 0 0 0-1.09 1.65v.18a2.1 2.1 0 1 1-4.2 0v-.18a1.8 1.8 0 0 0-1.09-1.65 1.8 1.8 0 0 0-1.98.36l-.06.06a2.1 2.1 0 1 1-2.97-2.97l.06-.06A1.8 1.8 0 0 0 4.58 15a1.8 1.8 0 0 0-1.65-1.09h-.18a2.1 2.1 0 1 1 0-4.2h.18a1.8 1.8 0 0 0 1.65-1.09 1.8 1.8 0 0 0-.36-1.98l-.06-.06a2.1 2.1 0 1 1 2.97-2.97l.06.06a1.8 1.8 0 0 0 1.98.36 1.8 1.8 0 0 0 1.09-1.65V2.1a2.1 2.1 0 1 1 4.2 0v.18a1.8 1.8 0 0 0 1.09 1.65 1.8 1.8 0 0 0 1.98-.36l.06-.06a2.1 2.1 0 1 1 2.97 2.97l-.06.06a1.8 1.8 0 0 0-.36 1.98 1.8 1.8 0 0 0 1.65 1.09h.18a2.1 2.1 0 1 1 0 4.2h-.18A1.8 1.8 0 0 0 19.4 15Z"></path>
+    </svg>
+  </button>
+
+  <main class="timer-stage" data-stage role="button" tabindex="0" aria-label="Tap to start timer">
+    <section class="timer-content" aria-live="polite" aria-atomic="true">
+      <p class="timer-eyebrow" data-eyebrow>Hot Potato</p>
+      <h1 class="timer-primary" data-primary>TAP TO START</h1>
+      <p class="timer-secondary" data-secondary>20 second introduction</p>
+      <p class="person-counter" data-person>Person 1</p>
+    </section>
+  </main>
+
+  <div class="settings-backdrop" data-settings hidden>
+    <section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <div class="settings-header">
+        <h2 id="settings-title">Settings</h2>
+        <button class="close-button" type="button" aria-label="Close settings" data-settings-close>&times;</button>
+      </div>
+
+      <form class="settings-form" data-settings-form>
+        <fieldset>
+          <legend>Intro Time</legend>
+          <div class="choice-grid">
+            <label><input type="radio" name="introSeconds" value="15"><span>15 sec</span></label>
+            <label><input type="radio" name="introSeconds" value="20"><span>20 sec</span></label>
+            <label><input type="radio" name="introSeconds" value="30"><span>30 sec</span></label>
+            <label><input type="radio" name="introSeconds" value="45"><span>45 sec</span></label>
+            <label><input type="radio" name="introSeconds" value="60"><span>60 sec</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Grace Period</legend>
+          <div class="choice-grid compact">
+            <label><input type="radio" name="graceSeconds" value="0"><span>0 sec</span></label>
+            <label><input type="radio" name="graceSeconds" value="3"><span>3 sec</span></label>
+            <label><input type="radio" name="graceSeconds" value="5"><span>5 sec</span></label>
+            <label><input type="radio" name="graceSeconds" value="10"><span>10 sec</span></label>
+          </div>
+        </fieldset>
+
+        <div class="setting-row">
+          <div>
+            <strong>Sound</strong>
+            <span data-sound-label>On</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" name="soundEnabled">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="settings-actions">
+          <button class="panel-button" type="button" data-reset-counter>Reset Person</button>
+          <button class="panel-button" type="button" data-fullscreen>Full Screen</button>
+        </div>
+
+        <p class="settings-status" data-settings-status aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+</div>
+
+<script src="hotpotato.js"></script>
+</body>
+</html>

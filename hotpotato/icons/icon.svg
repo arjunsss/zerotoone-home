@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Hot Potato Timer</title>
+  <desc id="desc">A potato-shaped timer icon on a dark green background.</desc>
+  <rect width="512" height="512" rx="108" fill="#173824"/>
+  <path d="M336 126c42 18 67 54 76 96 12 56-9 118-55 151-45 33-113 37-162 12-49-25-82-79-75-132 7-52 53-75 95-100 41-24 81-45 121-27Z" fill="#d69a4a"/>
+  <path d="M336 126c42 18 67 54 76 96 12 56-9 118-55 151-45 33-113 37-162 12-49-25-82-79-75-132 7-52 53-75 95-100 41-24 81-45 121-27Z" fill="none" stroke="#6b401e" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M328 96c2-36 24-62 57-78-4 39 6 61 37 88-43 5-69 2-94-10Z" fill="#f05a32"/>
+  <path d="M363 65c16-25 40-39 70-41-13 26-12 45 5 71-32-4-52-12-75-30Z" fill="#ffbd38"/>
+  <circle cx="210" cy="235" r="14" fill="#7f4f27"/>
+  <circle cx="301" cy="215" r="12" fill="#7f4f27"/>
+  <circle cx="280" cy="306" r="16" fill="#7f4f27"/>
+  <circle cx="353" cy="270" r="10" fill="#7f4f27"/>
+  <path d="M164 418h184" stroke="#f8f5eb" stroke-width="28" stroke-linecap="round"/>
+</svg>
