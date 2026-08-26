@@ -438,6 +438,10 @@ main.log {
   color: var(--fg-muted);
   line-height: 1.5;
 }
+.card p strong {
+  color: var(--fg);
+  font-weight: 700;
+}
 .section-actions {
   margin-top: 26px;
 }
