@@ -153,7 +153,8 @@ nav.links a.nav-cta:focus-visible {
 
 /* ---------- hero ---------- */
 .hero {
-  padding: 76px 0 64px;
+  padding-top: 76px;
+  padding-bottom: 64px;
 }
 .featured-hero {
   display: grid;
