@@ -479,6 +479,26 @@ main.log {
   text-decoration: underline;
 }
 
+/* event calendar */
+.luma-calendar {
+  margin-top: 28px;
+  width: 100%;
+  max-width: 720px;
+}
+.luma-calendar-frame {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 1px solid #bfcbda88;
+  border-radius: 4px;
+  background: var(--card-bg);
+}
+@media (max-width: 640px) {
+  .luma-calendar-frame {
+    height: 520px;
+  }
+}
+
 /* user story cards get a quote-like left rule */
 .card.story {
   border-left: 3px solid var(--accent-gold);
